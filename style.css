@@ -842,3 +842,15 @@ body.view-control-buttons .viewControlButton {
   width: 100%;
   height: auto;
 }
+#overlayIntro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; /* opcional para evitar que pegue contra el borde */
+  text-align: center;
+}
+
+#overlayIntro .intro-text {
+  max-width: 550px;   /* <-- AJUSTA ESTE VALOR PARA HACERLO MÁS ESTRECHO O MÁS ANCHO */
+  margin: 0 auto;
+}
