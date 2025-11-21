@@ -854,3 +854,8 @@ body.view-control-buttons .viewControlButton {
   max-width: 550px;   /* <-- AJUSTA ESTE VALOR PARA HACERLO MÁS ESTRECHO O MÁS ANCHO */
   margin: 0 auto;
 }
+#loadingText {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
