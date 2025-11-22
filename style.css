@@ -859,3 +859,41 @@ body.view-control-buttons .viewControlButton {
   font-weight: bold;
   text-align: center;
 }
+@media (max-width: 768px) {
+
+  html, body {
+    font-size: 12px; /* Tamaño de texto general más pequeño */
+  }
+
+  #titleBar .sceneName {
+    font-size: 14px;
+  }
+
+  /* Tooltips de hotspot */
+  .link-hotspot-tooltip {
+    font-size: 12px;
+    max-width: 180px;
+    padding: 6px 8px;
+  }
+
+  /* Texto de info hotspot */
+  .info-hotspot .info-hotspot-text {
+    font-size: 12px;
+    max-width: 260px;
+  }
+
+  /* Títulos del info hotspot */
+  .info-hotspot .info-hotspot-title {
+    font-size: 13px;
+  }
+
+  /* Modal en celular */
+  .info-hotspot-modal .info-hotspot-text {
+    font-size: 13px;
+  }
+
+  /* Lista de escenas */
+  #sceneList .scene .text {
+    font-size: 14px;
+  }
+}
