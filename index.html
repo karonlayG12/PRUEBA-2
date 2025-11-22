@@ -36,7 +36,6 @@
     text-align: center;
     font-family: Arial, sans-serif;
     color: white;
-    font-size: 22px;
     z-index: 99999;
     opacity: 1;
     transition: opacity 1.5s ease;
@@ -48,9 +47,27 @@
     pointer-events: none;
   }
 
+  .intro-text {
+    max-width: 750px;
+    margin: auto;
+    font-size: 16px;
+    line-height: 1.35;
+  }
+
   .intro-text p {
-    margin-bottom: 18px;
-    line-height: 1.4;
+    margin-bottom: 16px;
+  }
+
+  #countdown {
+    font-size: 22px;
+    opacity: 0.9;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+
+  @media (max-width: 600px) {
+    .intro-text { font-size: 14px; }
+    #countdown { font-size: 18px; }
   }
 </style>
 
@@ -71,8 +88,7 @@
 
     <p><strong>Cargando…</strong></p>
 
-    <!-- Aquí aparecerá el conteo -->
-    <p id="countdown" style="font-size:18px; opacity:0.9; margin-top:10px;">Iniciando en 24 segundos…</p>
+    <p id="countdown">Iniciando en 24 segundos…</p>
   </div>
 </div>
 
@@ -234,7 +250,6 @@
   <img class="icon" src="img/minus.png">
 </a>
 
-<!-- LIBRERÍAS -->
 <script src="vendor/screenfull.min.js"></script>
 <script src="vendor/bowser.min.js"></script>
 <script src="vendor/marzipano.js"></script>
@@ -259,7 +274,7 @@
   window.onload = function () {
     setTimeout(() => {
       document.getElementById("overlayIntro").classList.add("hidden");
-    }, 23000);
+    }, 24000);
   };
 </script>
 
